@@ -1,7 +1,7 @@
 {
   "name": "MA3",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "File Management.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.17.0-preview]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -47,8 +47,8 @@
   "expressionLanguage": "CSharp",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "81a995ae-9ea6-45d7-8205-6c24a5cc446f",
+      "filePath": "File Management.xaml",
+      "uniqueId": "a1ae3c98-2217-4884-899f-483a6f9b84bf",
       "input": [],
       "output": []
     }
