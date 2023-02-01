@@ -20762,9 +20762,9 @@
     "restore": {
       "projectUniqueName": "MA3",
       "projectName": "MA3",
-      "projectPath": "D:\\Portfolio\\3rd Year 1st Sem\\Cycle 2\\AppDev\\MA3\\.local",
+      "projectPath": "D:\\Portfolio\\3rd Year 1st Sem\\Cycle 2\\AppDev\\MA3\\MA3\\.local",
       "packagesPath": "C:\\Users\\Vincent\\.nuget\\packages\\",
-      "outputPath": "D:\\Portfolio\\3rd Year 1st Sem\\Cycle 2\\AppDev\\MA3\\.local"
+      "outputPath": "D:\\Portfolio\\3rd Year 1st Sem\\Cycle 2\\AppDev\\MA3\\MA3\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
