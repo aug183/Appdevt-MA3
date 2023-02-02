@@ -21994,15 +21994,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vincent\\.nuget\\packages\\": {}
+    "C:\\Users\\gdevs\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "MA3",
       "projectName": "MA3",
-      "projectPath": "D:\\Portfolio\\3rd Year 1st Sem\\Cycle 2\\AppDev\\MA3\\MA3\\.local",
-      "packagesPath": "C:\\Users\\Vincent\\.nuget\\packages\\",
-      "outputPath": "D:\\Portfolio\\3rd Year 1st Sem\\Cycle 2\\AppDev\\MA3\\MA3\\.local"
+      "projectPath": "C:\\Users\\gdevs\\Documents\\UiPath\\Appdevt-MA3\\MA3\\.local",
+      "packagesPath": "C:\\Users\\gdevs\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gdevs\\Documents\\UiPath\\Appdevt-MA3\\MA3\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -22043,7 +22043,7 @@
             "version": "[1.13.1, 1.13.1]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Vincent\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\gdevs\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
