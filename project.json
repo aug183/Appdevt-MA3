@@ -1,13 +1,15 @@
 {
   "name": "MA3",
   "description": "Blank Process",
-  "main": "File Management.xaml",
+  "main": "Step 2.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.17.0-preview]",
     "UiPath.Mail.Activities": "[1.18.2]",
+    "UiPath.PDF.Activities": "[3.11.0]",
     "UiPath.System.Activities": "[22.10.4]",
     "UiPath.Testing.Activities": "[22.12.0-preview]",
-    "UiPath.UIAutomation.Activities": "[22.10.4]"
+    "UiPath.UIAutomation.Activities": "[22.10.4]",
+    "UiPath.Word.Activities": "[1.13.1]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -47,8 +49,8 @@
   "expressionLanguage": "CSharp",
   "entryPoints": [
     {
-      "filePath": "File Management.xaml",
-      "uniqueId": "e71d8e75-f29c-45d0-a989-cdbb3e31af16",
+      "filePath": "Step 2.xaml",
+      "uniqueId": "2b12b2e6-9b08-4c67-8335-96116df6ec0f",
       "input": [],
       "output": []
     }

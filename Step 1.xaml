@@ -1,0 +1,1106 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Excel" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="936.8,8488.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.IO</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="56">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Excel" sap:VirtualizedContainerService.HintSize="947.2,8424" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="SalaryTable" />
+      <Variable x:TypeArguments="x:String" Name="answer" />
+      <Variable x:TypeArguments="x:Int32" Name="count" />
+      <Variable x:TypeArguments="x:String" Name="EmployeeName" />
+      <Variable x:TypeArguments="x:Double" Name="Bonus" />
+      <Variable x:TypeArguments="x:Double" Name="BasePay" />
+      <Variable x:TypeArguments="x:Double" Name="TotalWithHoldings" />
+      <Variable x:TypeArguments="x:Double" Name="GrossPay" />
+      <Variable x:TypeArguments="x:Double" Name="SocialSecurity" />
+      <Variable x:TypeArguments="x:Double" Name="Philhealth" />
+      <Variable x:TypeArguments="x:Double" Name="Tax" />
+      <Variable x:TypeArguments="x:String" Name="email" />
+      <Variable x:TypeArguments="x:Double" Name="EmployeeID" />
+      <Variable x:TypeArguments="x:String" Name="excelPath">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">payroll.xlsx</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="884.8,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Choose an Option" OptionsString="[a] Add a new employee;[b] Enter every employee's salary;[c] Enter one employee's salary" Title="Excel Automation">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">answer</CSharpReference>
+        </OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="884.8,708.8" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+      <ui:IfElseIf.ConditionBlocks>
+        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+          <ui:IfElseIfBlock BlockType="If">
+            <ui:IfElseIfBlock.Condition>
+              <InArgument x:TypeArguments="x:Boolean">
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">answer == "[a] Add a new employee"</CSharpValue>
+              </InArgument>
+            </ui:IfElseIfBlock.Condition>
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">answer</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">A</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+          <ui:IfElseIfBlock BlockType="ElseIf">
+            <ui:IfElseIfBlock.Condition>
+              <InArgument x:TypeArguments="x:Boolean">
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">answer == "[c] Enter one employee's salary"</CSharpValue>
+              </InArgument>
+            </ui:IfElseIfBlock.Condition>
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_53">answer</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">C</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+        </sc:BindingList>
+      </ui:IfElseIf.ConditionBlocks>
+    </ui:IfElseIf>
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" sap:VirtualizedContainerService.HintSize="884.8,7228" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <Switch.Default>
+        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="642.4,6000" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000">
+          <ui:ExcelApplicationScope.Body>
+            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+              </ActivityAction.Argument>
+              <Sequence sap:VirtualizedContainerService.HintSize="608.8,5890.4" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="546.4,5778.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512.8,5662.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:ExcelReadRange AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="450.4,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_8" SheetName="Salary">
+                          <ui:ExcelReadRange.DataTable>
+                            <OutArgument x:TypeArguments="sd:DataTable">
+                              <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_66">SalaryTable</CSharpReference>
+                            </OutArgument>
+                          </ui:ExcelReadRange.DataTable>
+                          <ui:ExcelReadRange.Range>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ui:ExcelReadRange.Range>
+                        </ui:ExcelReadRange>
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Employee Name" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_6">
+                          <ui:GetRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">Row</CSharpValue>
+                            </InArgument>
+                          </ui:GetRowItem.Row>
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:String">
+                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_32">EmployeeName</CSharpReference>
+                            </OutArgument>
+                          </ui:GetRowItem.Value>
+                        </ui:GetRowItem>
+                        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="450.4,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False">
+                          <ui:InputDialog.Label>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">EmployeeName + "'s salary"</CSharpValue>
+                            </InArgument>
+                          </ui:InputDialog.Label>
+                          <ui:InputDialog.Result>
+                            <OutArgument x:TypeArguments="x:Double">
+                              <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">BasePay</CSharpReference>
+                            </OutArgument>
+                          </ui:InputDialog.Result>
+                          <ui:InputDialog.Title>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">"Enter " + EmployeeName + "'s salary"</CSharpValue>
+                            </InArgument>
+                          </ui:InputDialog.Title>
+                        </ui:InputDialog>
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Base Pay" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_14">
+                          <ui:UpdateRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">Row</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Row>
+                          <ui:UpdateRowItem.Value>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">BasePay</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Value>
+                        </ui:UpdateRowItem>
+                        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="450.4,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False">
+                          <ui:InputDialog.Label>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">EmployeeName + "'s Bonus Pay"</CSharpValue>
+                            </InArgument>
+                          </ui:InputDialog.Label>
+                          <ui:InputDialog.Result>
+                            <OutArgument x:TypeArguments="x:Double">
+                              <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">Bonus</CSharpReference>
+                            </OutArgument>
+                          </ui:InputDialog.Result>
+                          <ui:InputDialog.Title>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">EmployeeName + "'s Bonus Pay"</CSharpValue>
+                            </InArgument>
+                          </ui:InputDialog.Title>
+                        </ui:InputDialog>
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Bonus" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_15">
+                          <ui:UpdateRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">Row</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Row>
+                          <ui:UpdateRowItem.Value>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">Bonus</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Value>
+                        </ui:UpdateRowItem>
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Social Security" DisplayName="Social Security" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_16">
+                          <ui:UpdateRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">Row</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Row>
+                          <ui:UpdateRowItem.Value>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">BasePay * 0.14</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Value>
+                        </ui:UpdateRowItem>
+                        <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,2222.4" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                          <ui:IfElseIf.ConditionBlocks>
+                            <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                              <ui:IfElseIfBlock BlockType="If">
+                                <ui:IfElseIfBlock.Condition>
+                                  <InArgument x:TypeArguments="x:Boolean">
+                                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">BasePay &lt;20833</CSharpValue>
+                                  </InArgument>
+                                </ui:IfElseIfBlock.Condition>
+                                <ui:IfElseIfBlock.Then>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_17">
+                                      <ui:UpdateRowItem.Row>
+                                        <InArgument x:TypeArguments="sd:DataRow">
+                                          <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">Row</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Row>
+                                      <ui:UpdateRowItem.Value>
+                                        <InArgument x:TypeArguments="x:Object">
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">0</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Value>
+                                    </ui:UpdateRowItem>
+                                  </Sequence>
+                                </ui:IfElseIfBlock.Then>
+                              </ui:IfElseIfBlock>
+                              <ui:IfElseIfBlock BlockType="ElseIf">
+                                <ui:IfElseIfBlock.Condition>
+                                  <InArgument x:TypeArguments="x:Boolean">
+                                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">BasePay &gt;= 20833 &amp;&amp; BasePay &lt; 33332</CSharpValue>
+                                  </InArgument>
+                                </ui:IfElseIfBlock.Condition>
+                                <ui:IfElseIfBlock.Then>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_18">
+                                      <ui:UpdateRowItem.Row>
+                                        <InArgument x:TypeArguments="sd:DataRow">
+                                          <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">Row</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Row>
+                                      <ui:UpdateRowItem.Value>
+                                        <InArgument x:TypeArguments="x:Object">
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">BasePay * 0.15</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Value>
+                                    </ui:UpdateRowItem>
+                                  </Sequence>
+                                </ui:IfElseIfBlock.Then>
+                              </ui:IfElseIfBlock>
+                              <ui:IfElseIfBlock BlockType="ElseIf">
+                                <ui:IfElseIfBlock.Condition>
+                                  <InArgument x:TypeArguments="x:Boolean">
+                                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">BasePay &gt;= 33332 &amp;&amp; BasePay &lt; 66666</CSharpValue>
+                                  </InArgument>
+                                </ui:IfElseIfBlock.Condition>
+                                <ui:IfElseIfBlock.Then>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_19">
+                                      <ui:UpdateRowItem.Row>
+                                        <InArgument x:TypeArguments="sd:DataRow">
+                                          <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">Row</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Row>
+                                      <ui:UpdateRowItem.Value>
+                                        <InArgument x:TypeArguments="x:Object">
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">1875 + (BasePay * 0.2)</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Value>
+                                    </ui:UpdateRowItem>
+                                  </Sequence>
+                                </ui:IfElseIfBlock.Then>
+                              </ui:IfElseIfBlock>
+                              <ui:IfElseIfBlock BlockType="ElseIf">
+                                <ui:IfElseIfBlock.Condition>
+                                  <InArgument x:TypeArguments="x:Boolean">
+                                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">BasePay &gt;= 66666 &amp;&amp; BasePay &lt; 166666</CSharpValue>
+                                  </InArgument>
+                                </ui:IfElseIfBlock.Condition>
+                                <ui:IfElseIfBlock.Then>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_20">
+                                      <ui:UpdateRowItem.Row>
+                                        <InArgument x:TypeArguments="sd:DataRow">
+                                          <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">Row</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Row>
+                                      <ui:UpdateRowItem.Value>
+                                        <InArgument x:TypeArguments="x:Object">
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">8541 + (BasePay * 0.25)</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Value>
+                                    </ui:UpdateRowItem>
+                                  </Sequence>
+                                </ui:IfElseIfBlock.Then>
+                              </ui:IfElseIfBlock>
+                              <ui:IfElseIfBlock BlockType="ElseIf">
+                                <ui:IfElseIfBlock.Condition>
+                                  <InArgument x:TypeArguments="x:Boolean">
+                                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">BasePay &gt;= 166666 &amp;&amp; BasePay &lt; 666666</CSharpValue>
+                                  </InArgument>
+                                </ui:IfElseIfBlock.Condition>
+                                <ui:IfElseIfBlock.Then>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_21">
+                                      <ui:UpdateRowItem.Row>
+                                        <InArgument x:TypeArguments="sd:DataRow">
+                                          <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">Row</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Row>
+                                      <ui:UpdateRowItem.Value>
+                                        <InArgument x:TypeArguments="x:Object">
+                                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">33541 + (BasePay * 0.3)</CSharpValue>
+                                        </InArgument>
+                                      </ui:UpdateRowItem.Value>
+                                    </ui:UpdateRowItem>
+                                  </Sequence>
+                                </ui:IfElseIfBlock.Then>
+                              </ui:IfElseIfBlock>
+                            </sc:BindingList>
+                          </ui:IfElseIf.ConditionBlocks>
+                        </ui:IfElseIf>
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Philhealth" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_22">
+                          <ui:UpdateRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">Row</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Row>
+                          <ui:UpdateRowItem.Value>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">BasePay * 0.15</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Value>
+                        </ui:UpdateRowItem>
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Gross Pay" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_23">
+                          <ui:UpdateRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">Row</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Row>
+                          <ui:UpdateRowItem.Value>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">BasePay + Bonus</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Value>
+                        </ui:UpdateRowItem>
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Gross Pay" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_7">
+                          <ui:GetRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75">Row</CSharpValue>
+                            </InArgument>
+                          </ui:GetRowItem.Row>
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:Double">
+                              <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">GrossPay</CSharpReference>
+                            </OutArgument>
+                          </ui:GetRowItem.Value>
+                        </ui:GetRowItem>
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Social Security" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_8">
+                          <ui:GetRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">Row</CSharpValue>
+                            </InArgument>
+                          </ui:GetRowItem.Row>
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:Double">
+                              <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">SocialSecurity</CSharpReference>
+                            </OutArgument>
+                          </ui:GetRowItem.Value>
+                        </ui:GetRowItem>
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_9">
+                          <ui:GetRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">Row</CSharpValue>
+                            </InArgument>
+                          </ui:GetRowItem.Row>
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:Double">
+                              <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_37">Tax</CSharpReference>
+                            </OutArgument>
+                          </ui:GetRowItem.Value>
+                        </ui:GetRowItem>
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Philhealth" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_10">
+                          <ui:GetRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_78">Row</CSharpValue>
+                            </InArgument>
+                          </ui:GetRowItem.Row>
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:Double">
+                              <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">Philhealth</CSharpReference>
+                            </OutArgument>
+                          </ui:GetRowItem.Value>
+                        </ui:GetRowItem>
+                        <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Total Withholdings" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_24">
+                          <ui:UpdateRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">Row</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Row>
+                          <ui:UpdateRowItem.Value>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">GrossPay - SocialSecurity - Tax -Philhealth</CSharpValue>
+                            </InArgument>
+                          </ui:UpdateRowItem.Value>
+                        </ui:UpdateRowItem>
+                        <ui:ExcelWriteRange AddHeaders="False" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="450.4,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Salary" StartingCell="A2">
+                          <ui:ExcelWriteRange.DataTable>
+                            <InArgument x:TypeArguments="sd:DataTable">
+                              <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81">SalaryTable</CSharpValue>
+                            </InArgument>
+                          </ui:ExcelWriteRange.DataTable>
+                        </ui:ExcelWriteRange>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                  <ui:ForEachRow.DataTable>
+                    <InArgument x:TypeArguments="sd:DataTable">
+                      <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">SalaryTable</CSharpValue>
+                    </InArgument>
+                  </ui:ForEachRow.DataTable>
+                </ui:ForEachRow>
+              </Sequence>
+            </ActivityAction>
+          </ui:ExcelApplicationScope.Body>
+          <ui:ExcelApplicationScope.WorkbookPath>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_143">excelPath</CSharpValue>
+            </InArgument>
+          </ui:ExcelApplicationScope.WorkbookPath>
+        </ui:ExcelApplicationScope>
+      </Switch.Default>
+      <Switch.Expression>
+        <InArgument x:TypeArguments="x:String">
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">answer</CSharpValue>
+        </InArgument>
+      </Switch.Expression>
+      <ui:ExcelApplicationScope Password="{x:Null}" x:Key="A" sap:VirtualizedContainerService.HintSize="625.6,1672" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000">
+        <ui:ExcelApplicationScope.Body>
+          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1562.4" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExcelReadRange AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="529.6,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_9" SheetName="Salary">
+                <ui:ExcelReadRange.DataTable>
+                  <OutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_67">SalaryTable</CSharpReference>
+                  </OutArgument>
+                </ui:ExcelReadRange.DataTable>
+                <ui:ExcelReadRange.Range>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:ExcelReadRange.Range>
+              </ui:ExcelReadRange>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,309.6" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">
+                            <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_48">count</CSharpReference>
+                          </OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">
+                            <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_94">count + 1</CSharpValue>
+                          </InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <ui:ForEachRow.DataTable>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">SalaryTable</CSharpValue>
+                  </InArgument>
+                </ui:ForEachRow.DataTable>
+              </ui:ForEachRow>
+              <Assign sap:VirtualizedContainerService.HintSize="529.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">
+                    <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_49">count</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">
+                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">count + 1</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="529.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="Input employee name:" Title="Employee Name">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_50">EmployeeName</CSharpReference>
+                  </OutArgument>
+                </ui:InputDialog.Result>
+              </ui:InputDialog>
+              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="529.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_9" IsPassword="False" Label="Input employee email:" Title="Employee Email">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_51">email</CSharpReference>
+                  </OutArgument>
+                </ui:InputDialog.Result>
+              </ui:InputDialog>
+              <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="529.6,188" sap2010:WorkflowViewState.IdRef="AddDataRow_5">
+                <ui:AddDataRow.ArrayRow>
+                  <InArgument x:TypeArguments="s:Object[]">
+                    <CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">new string[] {count.ToString(), EmployeeName, email};</CSharpValue>
+                  </InArgument>
+                </ui:AddDataRow.ArrayRow>
+                <ui:AddDataRow.DataTable>
+                  <InOutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_52">SalaryTable</CSharpReference>
+                  </InOutArgument>
+                </ui:AddDataRow.DataTable>
+              </ui:AddDataRow>
+              <ui:ExcelWriteRange AddHeaders="True" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="529.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_4" SheetName="Salary" StartingCell="A1">
+                <ui:ExcelWriteRange.DataTable>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">SalaryTable</CSharpValue>
+                  </InArgument>
+                </ui:ExcelWriteRange.DataTable>
+              </ui:ExcelWriteRange>
+            </Sequence>
+          </ActivityAction>
+        </ui:ExcelApplicationScope.Body>
+        <ui:ExcelApplicationScope.WorkbookPath>
+          <InArgument x:TypeArguments="x:String">
+            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_140">excelPath</CSharpValue>
+          </InArgument>
+        </ui:ExcelApplicationScope.WorkbookPath>
+      </ui:ExcelApplicationScope>
+      <Sequence x:Key="C" sap:VirtualizedContainerService.HintSize="844.8,7016.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" sap:VirtualizedContainerService.HintSize="782.4,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_10" IsPassword="False" Label="Input Employee ID" Title="Employee ID">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:Int32">
+              <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_55">count</CSharpReference>
+            </OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="782.4,6623.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_6" InstanceCachePeriod="3000">
+          <ui:ExcelApplicationScope.Body>
+            <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="748.8,6513.6" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ExcelReadRange AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="686.4,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_10" SheetName="Salary">
+                  <ui:ExcelReadRange.DataTable>
+                    <OutArgument x:TypeArguments="sd:DataTable">
+                      <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_68">SalaryTable</CSharpReference>
+                    </OutArgument>
+                  </ui:ExcelReadRange.DataTable>
+                  <ui:ExcelReadRange.Range>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:ExcelReadRange.Range>
+                </ui:ExcelReadRange>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="686.4,6301.6" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="652.8,6185.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Employee ID" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="590.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_11">
+                          <ui:GetRowItem.Row>
+                            <InArgument x:TypeArguments="sd:DataRow">
+                              <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">Row</CSharpValue>
+                            </InArgument>
+                          </ui:GetRowItem.Row>
+                          <ui:GetRowItem.Value>
+                            <OutArgument x:TypeArguments="x:Double">
+                              <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_65">EmployeeID</CSharpReference>
+                            </OutArgument>
+                          </ui:GetRowItem.Value>
+                        </ui:GetRowItem>
+                        <If sap:VirtualizedContainerService.HintSize="590.4,5845.6" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If.Condition>
+                            <InArgument x:TypeArguments="x:Boolean">
+                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">count == EmployeeID</CSharpValue>
+                            </InArgument>
+                          </If.Condition>
+                          <If.Then>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512.8,5562.4" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Employee Name" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_12">
+                                <ui:GetRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:GetRowItem.Row>
+                                <ui:GetRowItem.Value>
+                                  <OutArgument x:TypeArguments="x:String">
+                                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_58">EmployeeName</CSharpReference>
+                                  </OutArgument>
+                                </ui:GetRowItem.Value>
+                              </ui:GetRowItem>
+                              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="450.4,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_11" IsPassword="False">
+                                <ui:InputDialog.Label>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_105">EmployeeName + "'s salary"</CSharpValue>
+                                  </InArgument>
+                                </ui:InputDialog.Label>
+                                <ui:InputDialog.Result>
+                                  <OutArgument x:TypeArguments="x:Double">
+                                    <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_59">BasePay</CSharpReference>
+                                  </OutArgument>
+                                </ui:InputDialog.Result>
+                                <ui:InputDialog.Title>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_104">"Enter " + EmployeeName + "'s salary"</CSharpValue>
+                                  </InArgument>
+                                </ui:InputDialog.Title>
+                              </ui:InputDialog>
+                              <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Base Pay" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_26">
+                                <ui:UpdateRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_107">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Row>
+                                <ui:UpdateRowItem.Value>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_106">BasePay</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Value>
+                              </ui:UpdateRowItem>
+                              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="450.4,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_12" IsPassword="False">
+                                <ui:InputDialog.Label>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_109">EmployeeName + "'s Bonus Pay"</CSharpValue>
+                                  </InArgument>
+                                </ui:InputDialog.Label>
+                                <ui:InputDialog.Result>
+                                  <OutArgument x:TypeArguments="x:Double">
+                                    <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_60">Bonus</CSharpReference>
+                                  </OutArgument>
+                                </ui:InputDialog.Result>
+                                <ui:InputDialog.Title>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_108">EmployeeName + "'s Bonus Pay"</CSharpValue>
+                                  </InArgument>
+                                </ui:InputDialog.Title>
+                              </ui:InputDialog>
+                              <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Bonus" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_27">
+                                <ui:UpdateRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_111">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Row>
+                                <ui:UpdateRowItem.Value>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_110">Bonus</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Value>
+                              </ui:UpdateRowItem>
+                              <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Social Security" DisplayName="Social Security" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_28">
+                                <ui:UpdateRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_113">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Row>
+                                <ui:UpdateRowItem.Value>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_112">BasePay * 0.14</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Value>
+                              </ui:UpdateRowItem>
+                              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450.4,2222.4" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+                                <ui:IfElseIf.ConditionBlocks>
+                                  <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                    <ui:IfElseIfBlock BlockType="If">
+                                      <ui:IfElseIfBlock.Condition>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_114">BasePay &lt;20833</CSharpValue>
+                                        </InArgument>
+                                      </ui:IfElseIfBlock.Condition>
+                                      <ui:IfElseIfBlock.Then>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_29">
+                                            <ui:UpdateRowItem.Row>
+                                              <InArgument x:TypeArguments="sd:DataRow">
+                                                <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_116">Row</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Row>
+                                            <ui:UpdateRowItem.Value>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_115">0</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Value>
+                                          </ui:UpdateRowItem>
+                                        </Sequence>
+                                      </ui:IfElseIfBlock.Then>
+                                    </ui:IfElseIfBlock>
+                                    <ui:IfElseIfBlock BlockType="ElseIf">
+                                      <ui:IfElseIfBlock.Condition>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_117">BasePay &gt;= 20833 &amp;&amp; BasePay &lt; 33332</CSharpValue>
+                                        </InArgument>
+                                      </ui:IfElseIfBlock.Condition>
+                                      <ui:IfElseIfBlock.Then>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_30">
+                                            <ui:UpdateRowItem.Row>
+                                              <InArgument x:TypeArguments="sd:DataRow">
+                                                <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_119">Row</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Row>
+                                            <ui:UpdateRowItem.Value>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_118">BasePay * 0.15</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Value>
+                                          </ui:UpdateRowItem>
+                                        </Sequence>
+                                      </ui:IfElseIfBlock.Then>
+                                    </ui:IfElseIfBlock>
+                                    <ui:IfElseIfBlock BlockType="ElseIf">
+                                      <ui:IfElseIfBlock.Condition>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_120">BasePay &gt;= 33332 &amp;&amp; BasePay &lt; 66666</CSharpValue>
+                                        </InArgument>
+                                      </ui:IfElseIfBlock.Condition>
+                                      <ui:IfElseIfBlock.Then>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_31">
+                                            <ui:UpdateRowItem.Row>
+                                              <InArgument x:TypeArguments="sd:DataRow">
+                                                <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_122">Row</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Row>
+                                            <ui:UpdateRowItem.Value>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">1875 + (BasePay * 0.2)</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Value>
+                                          </ui:UpdateRowItem>
+                                        </Sequence>
+                                      </ui:IfElseIfBlock.Then>
+                                    </ui:IfElseIfBlock>
+                                    <ui:IfElseIfBlock BlockType="ElseIf">
+                                      <ui:IfElseIfBlock.Condition>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_123">BasePay &gt;= 66666 &amp;&amp; BasePay &lt; 166666</CSharpValue>
+                                        </InArgument>
+                                      </ui:IfElseIfBlock.Condition>
+                                      <ui:IfElseIfBlock.Then>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_32">
+                                            <ui:UpdateRowItem.Row>
+                                              <InArgument x:TypeArguments="sd:DataRow">
+                                                <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_125">Row</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Row>
+                                            <ui:UpdateRowItem.Value>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_124">8541 + (BasePay * 0.25)</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Value>
+                                          </ui:UpdateRowItem>
+                                        </Sequence>
+                                      </ui:IfElseIfBlock.Then>
+                                    </ui:IfElseIfBlock>
+                                    <ui:IfElseIfBlock BlockType="ElseIf">
+                                      <ui:IfElseIfBlock.Condition>
+                                        <InArgument x:TypeArguments="x:Boolean">
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_126">BasePay &gt;= 166666 &amp;&amp; BasePay &lt; 666666</CSharpValue>
+                                        </InArgument>
+                                      </ui:IfElseIfBlock.Condition>
+                                      <ui:IfElseIfBlock.Then>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,304.8" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="337.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_33">
+                                            <ui:UpdateRowItem.Row>
+                                              <InArgument x:TypeArguments="sd:DataRow">
+                                                <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_128">Row</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Row>
+                                            <ui:UpdateRowItem.Value>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_127">33541 + (BasePay * 0.3)</CSharpValue>
+                                              </InArgument>
+                                            </ui:UpdateRowItem.Value>
+                                          </ui:UpdateRowItem>
+                                        </Sequence>
+                                      </ui:IfElseIfBlock.Then>
+                                    </ui:IfElseIfBlock>
+                                  </sc:BindingList>
+                                </ui:IfElseIf.ConditionBlocks>
+                              </ui:IfElseIf>
+                              <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Philhealth" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_34">
+                                <ui:UpdateRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_130">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Row>
+                                <ui:UpdateRowItem.Value>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_129">BasePay * 0.15</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Value>
+                              </ui:UpdateRowItem>
+                              <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Gross Pay" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_35">
+                                <ui:UpdateRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_132">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Row>
+                                <ui:UpdateRowItem.Value>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_131">BasePay + Bonus</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Value>
+                              </ui:UpdateRowItem>
+                              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Gross Pay" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_13">
+                                <ui:GetRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_133">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:GetRowItem.Row>
+                                <ui:GetRowItem.Value>
+                                  <OutArgument x:TypeArguments="x:Double">
+                                    <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_61">GrossPay</CSharpReference>
+                                  </OutArgument>
+                                </ui:GetRowItem.Value>
+                              </ui:GetRowItem>
+                              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Social Security" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_14">
+                                <ui:GetRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_134">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:GetRowItem.Row>
+                                <ui:GetRowItem.Value>
+                                  <OutArgument x:TypeArguments="x:Double">
+                                    <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_62">SocialSecurity</CSharpReference>
+                                  </OutArgument>
+                                </ui:GetRowItem.Value>
+                              </ui:GetRowItem>
+                              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Tax" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_15">
+                                <ui:GetRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_135">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:GetRowItem.Row>
+                                <ui:GetRowItem.Value>
+                                  <OutArgument x:TypeArguments="x:Double">
+                                    <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_63">Tax</CSharpReference>
+                                  </OutArgument>
+                                </ui:GetRowItem.Value>
+                              </ui:GetRowItem>
+                              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Philhealth" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="450.4,188" sap2010:WorkflowViewState.IdRef="GetRowItem_16">
+                                <ui:GetRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_136">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:GetRowItem.Row>
+                                <ui:GetRowItem.Value>
+                                  <OutArgument x:TypeArguments="x:Double">
+                                    <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_64">Philhealth</CSharpReference>
+                                  </OutArgument>
+                                </ui:GetRowItem.Value>
+                              </ui:GetRowItem>
+                              <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Total Withholdings" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="450.4,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_36">
+                                <ui:UpdateRowItem.Row>
+                                  <InArgument x:TypeArguments="sd:DataRow">
+                                    <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_138">Row</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Row>
+                                <ui:UpdateRowItem.Value>
+                                  <InArgument x:TypeArguments="x:Object">
+                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_137">GrossPay - SocialSecurity - Tax -Philhealth</CSharpValue>
+                                  </InArgument>
+                                </ui:UpdateRowItem.Value>
+                              </ui:UpdateRowItem>
+                              <ui:ExcelWriteRange AddHeaders="False" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="450.4,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_5" SheetName="Salary" StartingCell="A2">
+                                <ui:ExcelWriteRange.DataTable>
+                                  <InArgument x:TypeArguments="sd:DataTable">
+                                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_139">SalaryTable</CSharpValue>
+                                  </InArgument>
+                                </ui:ExcelWriteRange.DataTable>
+                              </ui:ExcelWriteRange>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="400,104.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                  <ui:ForEachRow.DataTable>
+                    <InArgument x:TypeArguments="sd:DataTable">
+                      <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">SalaryTable</CSharpValue>
+                    </InArgument>
+                  </ui:ForEachRow.DataTable>
+                </ui:ForEachRow>
+              </Sequence>
+            </ActivityAction>
+          </ui:ExcelApplicationScope.Body>
+          <ui:ExcelApplicationScope.WorkbookPath>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_141">excelPath</CSharpValue>
+            </InArgument>
+          </ui:ExcelApplicationScope.WorkbookPath>
+        </ui:ExcelApplicationScope>
+      </Sequence>
+    </Switch>
+  </Sequence>
+</Activity>
